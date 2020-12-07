@@ -13,7 +13,9 @@ body{
 .active {
     text-decoration: underline;
 }
-
+.textFade{
+    color: #ccc;
+}
 .clearFix{
     clear: both;
 }
@@ -58,37 +60,65 @@ body{
     background-image: url('../images/03-deep-blue-1024x576.jpg');
     background-position: center center;
     background-size: 100% 100%;
-    min-height: 300px;
+    min-height: 250px;
     text-align: right;
 }
 #jumbo h1{
     color: white;
     font-size: 45px;
-    padding: 120px;
+    padding-top: 60px;
+    padding-right: 15%;
+}
+#jumbo p{
+    color: rgba(255, 255, 255, 0.5);
+    padding-right: 15%;
 }
 #main{
     float: right;
-    width: 70%;
+    width: 69%;
     padding: 0 30px;
     box-sizing: border-box;
 }
 
 #sidebar{
     float: left;
-    width: 30%;
+    width: 29%;
     padding: 10px;
+    margin-right: 2%;
     border-right: 1px solid #333;
     box-sizing: border-box;
-    letter-spacing: 0.2em;
-    word-spacing: 1em;
+    /* letter-spacing: 0.2em; */
+    /* word-spacing: 1em; */
+}
+#sidebar h2{
+    font-size: 20px;
+}
+#sidebar a{
+    color: black;
+}
+#sidebar a:hover{
+    color: #00b1a2;
 }
 #mainFooter{
     background-color: #333;
-    color: #fff;
     padding: 20px;
     margin-top: 40px;
-    text-align: center;
-
+    position: center;
+}
+#mainFooter ul{
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+}
+#mainFooter li{
+    display: inline;
+    float: right;
+    padding: 1%;
+}
+#mainFooter a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
 }
 #pExample{
     width: 400px;
