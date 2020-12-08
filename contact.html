@@ -6,6 +6,8 @@
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="./CSS/styles.css">
+        <link rel="stylesheet" href="./CSS/form.css">
+
 
         <title>Zack's Porfolio</title>
         <meta name="keywords" content="zack, portfolio, projects">
@@ -30,38 +32,51 @@
         </nav>
 
         <section id="jumbo">
-            <h1>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+            <h1>Get in touch with me.</h1>
+            <p>I can help take your next projects to new hieghts.</p>
         </section>
         <br>
 
         <div class="container">
             <aside id="sidebar">
-                <h2>E-mail</h2>
-                <p>zbiedinger@mac.com</p>
                 <h2><a href="https://github.com/zbiedinger">GitHub</a></h2>
                 <p><a href="https://github.com/zbiedinger">github.com/zbiedinger</a></p>
                 <h2><a href="https://www.linkedin.com/in/zackery-biedinger/">LinkedIn</a></h2>
                 <p><a href="https://www.linkedin.com/in/zackery-biedinger/">linkedin.com/in/zackery-biedinger/</a></p>
+                <h2>E-mail</h2>
+                <p>zbiedinger@mac.com</p>
                 <img src="images\IMG_0447.JPG" width=100%>
             </aside>
             
-            <section id="main">
-                <h2>Find Me Here</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet voluptatem eius reprehenderit tempore ducimus sunt reiciendis excepturi atque. Similique cumque consectetur esse, tempore voluptatibus ipsam illo minus ducimus fugit consequatur.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, nemo aperiam! Est at, iusto neque obcaecati beatae laudantium modi possimus deleniti earum, harum et ipsam, nesciunt odit ipsum autem debitis?
-                </p>
-                
+            <section class="mainForm">
+                <h2>Reach Out</h2>
+                <div class="containerForm">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id=fullName name="fullName">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="text" id=email name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id=subject name="subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>                        
+                        </div>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div id="status" class="error">Success</div>
             </section>
             
-            <div class="clearFix"></div>
-            <div id="pExample">
-                <span>Span 1</span>
-                <span>Span 2</span>
-
-            </div>
         </div>
-        
+                
         <div id="fixed">Fixed Element</div>
 
         <footer id="mainFooter">
