@@ -101,6 +101,100 @@ body{
 #sidebar a:hover{
     color: #00b1a2;
 }
+
+/* Project cards effect */
+.card-wrapper {
+    margin-bottom: 30px;
+  }
+  .card-image .card .card-img-wrapper {
+    height: 100%;
+  }
+  .card-image .card .card-body {
+    display: none;
+  }
+  .card-image-title-description .card .card-img-wrapper {
+    max-height: 160px;
+  }
+  .card-image-title-description .card {
+    position: relative;
+    min-height: 300px;
+  }
+  .card-image-title-description .card .card-body {
+    height: auto;
+    position: relative;
+    top: 0;
+    margin-bottom: -70px;
+  }
+  .card-image-title-description .card:hover .card-body {
+    top: -70px;
+  }
+  .card-image-title-description .card .card-body .card-title {
+    margin-bottom: .75rem;
+  }
+  .card {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+    height: 100%;
+    width: 100%;
+    border-radius: 7%;
+    box-shadow: 6px 10px 15px -10px #98a2ab;
+  }
+  .card:hover {
+    box-shadow: 8px 12px 31px -10px #98aba8;
+  }
+  .card-img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50%;
+    overflow: hidden;
+    background-color: #00b1a294;
+  }
+  .card-img-wrapper h3{
+    transition: 1.5s ease;
+  }
+  .card:hover .card-img-wrapper h3{
+    transform: scale(1.15);
+  }
+  .card-body .card-title {
+    margin-bottom: calc(50% + 20px);
+    transition: 1.5s ease;
+  }
+  .card:hover .card-body .card-title {
+    margin-bottom: .75rem;
+  }
+  
+  .card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background-color: #fff;
+    transition: 1.5s ease;
+  }
+  .card-content {
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    transition: 1.5s ease;
+  }
+  .card:hover .card-body {
+    height: 80%;
+  }
+  .card:hover .card-content {
+    bottom: 0;
+  }
+  body {
+    background-image: linear-gradient(to right, #e6e9ec , #e6ecea);
+  }
+
+/* footer */
 #mainFooter{
 
     background-color: #333;
